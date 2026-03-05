@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Urbanist:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Urbanist', sans-serif;
+}
+
+/* ── Gradient Text ── */
+.gradient-text {
+    background: linear-gradient(135deg, #3d61ff 0%, #5529b3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bg-btn {
+    background: #5c54ef;
+    color: white;
+    border: none;
+}
+
+/* ── Card Hover ── */
+.card-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
+}
+
+/* ── Animations ── */
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+@keyframes floating {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-10px); }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+}
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+.slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+}
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ── Blob ── */
+.blob-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: blob 7s ease-in-out infinite;
+}
+@keyframes blob {
+    0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    25%       { border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; }
+    50%       { border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; }
+    75%       { border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; }
+}
+
+/* ── Glass ── */
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+/* ── Popular Card Border ── */
+.pricing-card-popular {
+    position: relative;
+    overflow: hidden;
+}
+.pricing-card-popular::before {
+    content: '';
+    position: absolute;
+    top: -2px; left: -2px; right: -2px; bottom: -2px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 24px;
+    z-index: -1;
+}
+
+/* ── Box Shadow ── */
+.smooth-shadow {
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
