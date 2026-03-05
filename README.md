@@ -2,10 +2,10 @@
 A responsive PetCare service website built with React, featuring modern UI design, service listings, and booking interfaces for pet care services.
 
 
-![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-3-06B6D4?style=flat-square&logo=tailwindcss)
-![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
+[![TailwindCSS](https://img.shields.io/badge/Tailwind-3-06B6D4?style=flat-square&logo=tailwindcss)](https://tailwindcss.com)
+[![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite)](https://vitejs.dev)
 
 ---
 
@@ -41,7 +41,7 @@ The app is built with a mock mode that simulates a real backend using `localStor
 ## Getting Started
 
 ```bash
-git clone https://github.com/yourusername/petcare.git
+git clone https://github.com/amelia-agustin/PetCare.git
 cd petcare/frontend
 
 pnpm install
